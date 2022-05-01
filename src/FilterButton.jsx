@@ -1,15 +1,19 @@
-import classes from "./filterButton.module.css"
+import classes from "./filterButton.module.css";
 
-export const FilterButton = (props) => {
+export const FilterButton = ({ name="Babbar", filter, setFilter }) => {
   return (
     <button
       type="button"
       onClick={() => {
-        props.setFilter(props.name);
+        setFilter(name);
       }}
       className={classes.filterBtn}
+      style={{
+        backgroundColor: name === filter && "black",
+        color: name === filter && "white",
+      }}
     >
-      {props.name}
+      {name}
     </button>
   );
 };

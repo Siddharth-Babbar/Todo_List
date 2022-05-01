@@ -46,15 +46,15 @@
   font-size: 20px;
 }
 
-/* #todoContent input[type=checkbox] + label {
+#todoContent input[type=checkbox] + label {
   display: block;
-} */
+}
 
-/* #todoContent input[type=checkbox] {
+#todoContent input[type=checkbox] {
   display: none;
-} */
+}
 
-/* #todoContent input[type=checkbox] + label:before {
+#todoContent input[type=checkbox] + label:before {
   content: "\2714";
   border: 2px solid #000;
   border-radius: 2px;
@@ -66,8 +66,8 @@
   margin-right: 8px;
   vertical-align: bottom;
   color: transparent;
-} */
+}
 
-/* #todoContent input[type=checkbox]:checked + label:before{
+#todoContent input[type=checkbox]:checked + label:before{
     background-color: mediumseagreen;
-} */
+}

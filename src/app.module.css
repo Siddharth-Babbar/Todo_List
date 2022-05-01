@@ -10,5 +10,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 70px;
+  height: 100vh;
+  background-color: rgb(130, 10, 110);
+  overflow: hidden;
 }

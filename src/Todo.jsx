@@ -62,6 +62,7 @@ export const Todo = (props) => {
           onClick={() => {
             setIsEditing(true);
           }}
+
           className={`${classes.Btn} ${classes.white}`}
         >
           Edit Task

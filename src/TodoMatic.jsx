@@ -9,7 +9,8 @@ const Filters = {
   Active: (task) => !task.completed,
   Completed: (task) => task.completed,
 };
-const FilterNames = Object.keys(Filters);
+// const FilterNames = Object.keys(Filters);
+const FilterNames = ["All", "Active", "Completed", undefined];
 export const TodoMatic = () => {
   const [tasks, setTasks] = useState([]);
   const [filter, setFilter] = useState("All");
@@ -117,7 +118,12 @@ export const TodoMatic = () => {
   };
 
   const FilterList = FilterNames.map((name) => (
-    <FilterButton name={name} key={name} setFilter={setFilter} />
+    <FilterButton
+      name={name}
+      key={name}
+      setFilter={setFilter}
+      filter={filter}
+    />
   ));
 
   const taskList = localStorage.getItem("tasks")
