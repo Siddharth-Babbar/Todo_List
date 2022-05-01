@@ -1,0 +1,39 @@
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid black;
+  padding: 50px;
+  width: 30%;
+}
+
+#mainHeading {
+  margin-bottom: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+
+#list {
+  list-style: none;
+  padding: 0px;
+}
+
+#secondaryContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.btnBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.secondaryHeading{
+    margin: 25px 0 20px 0;  
+    font-weight: 50;
+}

@@ -1,0 +1,11 @@
+.filterBtn{
+    width: 25%;
+    height: 35px;
+    border-radius: 5px;
+    font: inherit;
+}
+
+.filterBtn:focus{
+    background-color: black;
+    color: white;
+}   
